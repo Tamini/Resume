@@ -6,6 +6,7 @@
 \usepackage[scaled]{uarial}
 \renewcommand*\familydefault{\sfdefault} 
 \usepackage[T1]{fontenc}
+\usepackage{enumitem}
 %dimensions
 \topmargin=-0.5in %length of margin at the top of the page (1 inch added by default)
 \oddsidemargin=0.0in %length of margin on sides for odd pages
@@ -16,6 +17,7 @@
 \headsep=0pt %Increase to increase white space in between headers and the top of the page
 \textheight=9.0in %How tall the text body is allowed to be on each page
 \pagestyle{empty}
+\setlist[description]{itemsep=0mm}
 
 % based of off Gonzalo Medina's post at: http://tex.stackexchange.com/questions/75088/center-line-based-on-only-part-of-text
 \newcommand{\lineunder}{\vspace*{-8pt}\par\hspace*{-18pt}\hrulefill\par}
@@ -29,49 +31,60 @@
 \end{center}
 \vspace*{-8pt}
 }
+
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
 \begin{document}
 \contact{Tristan Amini}{(416) 801-5288}{tsamini@uwaterloo.ca}{github.com/Tamini}
 \smallskip
-\lineunder 
-\bigskip
-\noindent {\huge \bf Work Experience} 
-\begin{description}
-	{\Large \item [DevOps] at Polar}
+\lineunder
+\subsection*{Relevant Experience}
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\bf{Polar}}
+		{\bf{Toronto, ON}}
+	\\
+	\headerrow
+		{\emph{DevOps}}
+		{\emph{January 2014 - April 2014}}
 	\begin{itemize}
 		\item Used Chef, Ruby, Python and MySQL to improve developer performance and efficiency.
 		\item Set up easily creatable and destroyable virtual environments using Chef, Knife and vSphere to allow for easy testing of new features from github branches.
 		\item Created a variety of MySQL dump scripts in Python that are run daily using cron.
 		\item Used Chef to quickly configure Jenkins jobs to allow for automated building of projects.
 		\item Maintained and created a suite of Selenium tests for use on Polar's MediaVoice product.
-		\item Set up unit testing and linting for the various Chef cookbooks used at Polar
-		\item Wrote an IRC bot in Python to help coordinate users and add useful features to the company IRC channel.
+		\item Set up unit testing and linting for the various Chef cookbooks used at Polar.
+		\item Wrote an IRC bot in Python to help coordinate users and add useful features to the IRC chat.
 	\end{itemize}
-\end{description}
-\noindent {\huge \bf Open Source}
-\begin{description}
-	{\Large \item[Jenkins] code contributions to the jenkinsci organization }
+
+	\item
+	\headerrow
+		{\textbf{Jenkins CI}}
+		{\textbf{www.jenkins-ci.org}}
+	\\
+	\headerrow
+		{\emph{Contributing Community Member}}
+		{\emph{April 2014 -- Present}}
 	\begin{itemize}
-		\item Fixed a bug in the Cobertura plugin where columns would sometimes be missing from charts under some circumstances.  I was given commit access and invited to join the Jenkinsci organization for my contributions.  Fix required use of Java, Maven and Apache Jelly.
+		\item Fixed a bug in the Cobertura plugin where columns would sometimes be missing from charts under some circumstances.  Fix required use of Java, Maven and Apache Jelly.
 		\item Updated the Jira plugin to use a better method of building strings.
 		\item Added unit tests for new features to prevent regression.
+		\item Given commit access and invited to join the Jenkins CI organization on GitHub. 
 	\end{itemize}
-	{\Large \item[Chef] handlers and cookbooks }
-	\begin{itemize}
-		\item Fixed several bugs in a Chef  handler I was making use of at Polar.
-	\end{itemize}	
-\end{description}
-\noindent {\huge \bf Personal Projects}
+\end{itemize}
+\subsection*{Technical Skills:}
 \begin{description}
-	{\Large \item[AntiChess] a unique chess game with a custom-built AI }
-	\begin{itemize}
-		\item Wrote a custom AI capable of challenging the player with various levels of difficulty.
-		\item Used JFrame and various listeners.
-	\end{itemize}
-	{\Large \item[Unreal Engine 4] to create content for the Oculus Rift}
-	\begin{itemize}
-		\item Learning to use the Unreal Engine to create realistic experiences in Virtual Reality.
-		\item Once I get more experience, I will submit content to the Steam Green Light program.
-	\end{itemize}
+	\item[Languages:] Java, \CPP, Python, Ruby, Chef, MySQL, \LaTeX, Turing
+	\item[Other Tools:] Unreal Engine 4, Maven, Jenkins CI, SolidWorks, Emacs
 \end{description}
-\noindent {\huge \bf}
 \end{document}

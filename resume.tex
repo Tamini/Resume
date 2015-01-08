@@ -7,6 +7,7 @@
 \renewcommand*\familydefault{\sfdefault} 
 \usepackage[T1]{fontenc}
 \usepackage{enumitem}
+\usepackage[framemethod=tikz]{mdframed}
 %dimensions
 \topmargin=-0.5in %length of margin at the top of the page (1 inch added by default)
 \oddsidemargin=0.0in %length of margin on sides for odd pages
@@ -23,13 +24,17 @@
 \newcommand{\lineunder}{\vspace*{-8pt}\par\hspace*{-18pt}\hrulefill\par}
 \newcommand{\contact}[5]{%
 \vspace*{-8pt}
+\begin{mdframed}[hidealllines=true,backgroundcolor=gray!20]
+\vspace*{5pt}
 \begin{center}
 {\huge\scshape #1}\\
 \smallskip
 \makebox[\textwidth][c]{%
 \large\llap{#2\hspace{50pt}}#3\rlap{\hspace{50pt}{#4}}}
 \end{center}
-\vspace*{-8pt}
+\vspace*{5pt}
+\end{mdframed}
+\vspace*{-12pt}
 }
 
 \newcommand{\CPP}
@@ -45,9 +50,27 @@
 \contact{Tristan Amini}{(416) 801-5288}{tsamini@uwaterloo.ca}{github.com/Tamini}
 \smallskip
 \lineunder
+\vspace*{-10pt}
 \subsection*{Relevant Experience}
-\begin{itemize}
+\begin{itemize}[leftmargin=-0.5em, label={}]
 	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\bf{Interset}}
+		{\bf{Ottawa, ON}}
+	\\
+	\headerrow
+		{\emph{Software Engineer}}
+		{\emph{September 2014 - December 2014}}
+	\begin{itemize}
+		\item Built administration pages for use internally and by customers using JavaScript, HTML and CSS.
+		\item Wrote bash script to allow for automatic OVA creation for customer deployments of software bundle.
+		\item Created Scala application to read and anonymize millions of data entries from log files.
+		\item Fixed a registry key related bug in the company's agent using \CPP.
+		\item Lots of experience setting up and troubleshooting a Hadoop/HBase/Spark installation.
+		\item Wrote many maven and SBT files to package builds and deploy them to internal Artifactory server.
+	\end{itemize}
 
 	\item
 	\headerrow
@@ -58,29 +81,28 @@
 		{\emph{DevOps}}
 		{\emph{January 2014 - April 2014}}
 	\begin{itemize}
-		\item Used Chef, Ruby, Python and MySQL to improve developer performance and efficiency.
-		\item Set up easily creatable and destroyable virtual machines using Chef, Knife and vSphere to allow for easy testing of new features from github branches.
-		\item Created a variety of MySQL dump scripts in Python that are run daily using cron.
+		\item Set up easily recreatable and destroyable virtual machines using Chef, Knife and vSphere.
+		\item Created a variety of MySQL dump scripts in Python and SQL that are run daily using cron.
 		\item Used Chef to quickly configure Jenkins jobs to allow for automated building of projects.
-		\item Maintained and created a suite of Selenium tests for use on Polar's MediaVoice product.
+		\item Maintained and added to a suite of Selenium tests for use on Polar's MediaVoice product.
 		\item Set up unit testing and linting for the various Chef cookbooks used at Polar.
 		\item Wrote an IRC bot in Python to help coordinate users and add useful features to the IRC chat.
-		\item Voluntarily worked overtime from home to get projects done and fix high-priority bugs.
 	\end{itemize}
+
 	\item
 	\headerrow
 		{\textbf{Jenkins CI}}
 		{\textbf{www.jenkins-ci.org}}
 	\\
 	\headerrow
-		{\emph{Contributing Community Member}}
+		{\emph{Contributing Community Member on GitHub}}
 		{\emph{April 2014 - Present}}
 	\begin{itemize}
-		\item Fixed a bug in the Cobertura plugin where columns would sometimes be missing from charts under some circumstances.  Fix required use of Java, Maven and Apache Jelly.
-		\item Updated the Jira plugin to use a better method of building strings.
-		\item Added unit tests for new features to prevent regression.
-		\item Given commit access and invited to join the Jenkins CI organization on GitHub. 
+		\item Fixed a bug in the Cobertura plugin which required use of Java, Maven and Apache Jelly.
+		\item Updated the Jira plugin to use a better method for building strings.
+		\item Added unit tests for new features to prevent regression. 
 	\end{itemize}
+
 	\item
 	\headerrow
 		{\textbf{Personal Projects}}
@@ -91,19 +113,14 @@
 		{\emph{September 2010 - Present}}
 	\begin{itemize}
 		\item {\bf AntiChess} Created an chess game with a custom made AI. AI implemented alpha-beta pruning and depth-first search.
-		\item {\bf VR-Ready 3D Games} Since getting my Oculus Rift I've been learning and using Unreal Engine 4 to make my own virtual reality games and experiences!
-		\item {\bf R\'{e}sum\'{e}} This r\'{e}sum\'{e} was written entirely in LaTeX and the source can be found on my github account!
+		\item {\bf UW Course App} Wrote the Java and SQL backend for an android app that allowed for viewing and rating University of Waterloo courses.
+		\item {\bf R\'{e}sum\'{e}} This r\'{e}sum\'{e} was written entirely in \LaTeX\ and the source can be found on GitHub!
 	\end{itemize}
 
 \end{itemize}
-\subsection*{Technical Skills:}
+\subsection*{Summary of Technical Skills:}
 \begin{description}
-	\item[Languages:] Java, \CPP, Python (Django), Ruby, Chef, MySQL, \LaTeX, Turing, Basic Shell Scripting
-	\item[Other Tools:] Git, Unreal Engine 4, Maven, Jenkins CI, SolidWorks, Emacs (Vim is okay)
-\end{description}
-\subsection*{Future Goals:}
-\begin{description}
-	\item[Learn:] Clojure, HTML and C.
-	\item[Create:] Contribute to Linux distributions and a full commercial game made in Unreal Engine 4.
+	\item[Languages:] Java, \CPP, Shell Scripting, JavaScript, HTML, CSS, Python, Ruby, Chef, MySQL, \LaTeX\ and basics of x86 Assembly
+	\item[Other Tools:] Git, Maven, SBT, AngularJS, Regex, Jenkins CI, SolidWorks, Emacs, Vim, Eclipse IDE
 \end{description}
 \end{document}

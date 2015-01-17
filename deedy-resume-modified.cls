@@ -17,6 +17,7 @@
 
 \usepackage[hmargin=1.05cm, vmargin=0.75cm]{geometry} % Specifies horizontal and vertical page margins
 \usepackage[hidelinks]{hyperref}
+\usepackage{tabto}
 
 %----------------------------------------------------------------------------------------
 %	COLORS

@@ -1,127 +1,153 @@
-\documentclass[11pt]{article} %Sets the default text size to 11pt and class to article.
-%imports
-\usepackage{fullpage}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage[scaled]{uarial}
-\renewcommand*\familydefault{\sfdefault} 
-\usepackage[T1]{fontenc}
-\usepackage{enumitem}
-\usepackage[framemethod=tikz]{mdframed}
-%dimensions
-\topmargin=-0.5in %length of margin at the top of the page (1 inch added by default)
-\oddsidemargin=0.0in %length of margin on sides for odd pages
-\evensidemargin=0in %length of margin on sides for even pages
-\textwidth=6.5in %How wide you want your text to be
-\marginparwidth=0.5in
-\headheight=0pt %1in margins at top and bottom (1 inch is added to this value by default)
-\headsep=0pt %Increase to increase white space in between headers and the top of the page
-\textheight=9.0in %How tall the text body is allowed to be on each page
-\pagestyle{empty}
-\setlist[description]{itemsep=0mm}
-
-% based of off Gonzalo Medina's post at: http://tex.stackexchange.com/questions/75088/center-line-based-on-only-part-of-text
-\newcommand{\lineunder}{\vspace*{-8pt}\par\hspace*{-18pt}\hrulefill\par}
-\newcommand{\contact}[5]{%
-\vspace*{-8pt}
-\begin{mdframed}[linecolor=black, linewidth=0.5pt, topline=false, rightline=false, leftline=false, backgroundcolor=white!20]
-\vspace*{5pt}
-\begin{center}
-{\huge\scshape #1}\\
-\smallskip
-\makebox[\textwidth][c]{%
-\large\llap{#2\hspace{50pt}}#3\rlap{\hspace{50pt}{#4}}}
-\end{center}
-\vspace*{5pt}
-\end{mdframed}
-\vspace*{-18pt}
-}
-
-\newcommand{\CPP}
-{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
-
-\newcommand{\headerrow}[2]
-{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
-	#1 &
-	#2 \\
-\end{tabular*}}
+\documentclass[letterpaper]{deedy-resume-modified} % Use US Letter paper, change to a4paper for A4 
 
 \begin{document}
-\contact{Tristan Amini}{linkedin.com/in/tamini}{      tsamini@uwaterloo.ca}{github.com/Tamini}
-\subsection{\subsection*{Relevant Experience}}
-\begin{itemize}[leftmargin=-0.5em, label={}]
-	\parskip=0.1em
 
-	\item
-	\headerrow
-		{\bf{Interset (formery FileTrek)}}
-		{\bf{Ottawa, ON}}
-	\\
-	\headerrow
-		{\emph{Software Engineer}}
-		{\emph{September 2014 - December 2014}}
-	\begin{itemize}
-		\item Built administration pages for use internally and by customers using JavaScript, HTML and CSS.
-		\item Wrote bash script to allow for automatic OVA creation for customer deployments of software bundle.
-		\item Created Scala application to read and anonymize millions of data entries from log files.
-		\item Fixed a Windows registry key related bug in the company's agent using \CPP.
-		\item Maintained and set up a Hadoop/HBase/Spark installation.
-		\item Wrote many Maven and SBT files to package builds and deploy them to internal Artifactory server.
-	\end{itemize}
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
 
-	\item
-	\headerrow
-		{\bf{Polar}}
-		{\bf{Toronto, ON}}
-	\\
-	\headerrow
-		{\emph{DevOps}}
-		{\emph{January 2014 - April 2014}}
-	\begin{itemize}
-		\item Set up easily recreatable and destroyable virtual machines using Chef, Knife and vSphere.
-		\item Created a variety of MySQL dump scripts in Python and SQL that run daily using cron.
-		\item Used Chef to quickly configure Jenkins jobs to allow for automated building of projects.
-		\item Maintained and added to a suite of Selenium tests for use on Polar's MediaVoice product.
-		\item Set up unit testing and linting for the various Chef cookbooks used at Polar.
-		\item Wrote an IRC bot in Python to help coordinate users and add useful features to the IRC chat.
-	\end{itemize}
-
-	\item
-	\headerrow
-		{\textbf{Jenkins CI}}
-		{\textbf{www.jenkins-ci.org}}
-	\\
-	\headerrow
-		{\emph{Contributing Community Member on GitHub}}
-		{\emph{April 2014 - Present}}
-	\begin{itemize}
-		\item Fixed a bug in the Cobertura plugin which required use of Java, Maven and Apache Jelly.
-		\item Updated the Jira plugin to use a better method for building strings.
-		\item Added unit tests for new features to prevent regression. 
-	\end{itemize}
-
-	\item
-	\headerrow
-		{\textbf{Personal Projects}}
-		{\textbf{github.com/Tamini}}
-	\\
-	\headerrow
-		{\emph{Notable Coding Projects}}
-		{\emph{September 2010 - Present}}
-	\begin{itemize}
-		\item {\bf AntiChess} Created a chess game with a custom made AI. AI implemented alpha-beta pruning and depth-first search.
-		\item {\bf UW Course App} Wrote the Java and SQL backend for an android app that allowed for viewing and rating University of Waterloo courses.
-	\end{itemize}
-
-\end{itemize}
-\subsection*{Summary of Technical Skills:}
-\begin{description}
-	\item[Languages:] Java, \CPP, Shell Scripting, JavaScript, HTML, CSS, Python, Ruby, Chef, MySQL, \LaTeX\
-	\item[Other Tools:] Git, Maven, SBT, AngularJS, Regex, Jenkins CI, SolidWorks, Emacs, Vim, Eclipse IDE
-\end{description}
-\begin{center}
-\textit{\newline "Tristan was keen to gain exposure to every aspect of software development and he demonstrated an exceptional ability to very quickly become productive with new technologies." \newline
+\namesection{Tristan}{Amini}{ 
+ (416) 801-5288 | \href{mailto:dd367@cornell.edu}{tsamini@uwaterloo.ca}
 }
-- Michael Iles, Dev Lead at Interset
-\end{center}
+
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%------------------------------------------------
+% Education
+%------------------------------------------------
+
+\section{Education} 
+
+\subsection{University of Waterloo}
+
+\descript{Systems Design Engineering}
+\location{Class of 2018}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Links
+%------------------------------------------------
+
+\section{Links} 
+
+Github: \href{https://github.com/Tamini}{\bf github.com/Tamini} \\
+LinkedIn: \href{https://www.linkedin.com/in/tamini}{\bf linkedin.com/in/tamini} \\
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Skills
+%------------------------------------------------
+
+\section{Skills}
+
+\subsection{Programming}
+
+\location{Over 5000 lines:}
+Java \textbullet{} Shell \textbullet{} JavaScript \textbullet{} Matlab \\
+OCaml \textbullet{} Python \textbullet{} Rails \textbullet{} \LaTeX\ \\ 
+\location{Over 1000 lines:}
+C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
+\location{Familiar:}
+AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+
+\sectionspace % Some whitespace after the section
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the left column
+\hfill
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+
+\section{Work Experience}
+
+\runsubsection{Interset}
+\descript{| Software Engineer}
+
+\location{September 2014 – December 2014 | Ottawa, ON}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Built administration pages for use internally and by customers using JavaScript, HTML and CSS.
+\item Wrote bash script to allow for automatic OVA creation for customer deployments of software bundle.
+\item Created Scala application to read and anonymize millions of data entries from log files.
+\item Fixed a Windows registry related bug in the company's agent using \CPP.
+\item Maintained and set up a Hadoop/HBase/Spark installation.
+\item Wrote many Maven and SBT files to package builds and deploy them to internal Artifactory server.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{Polar}
+\descript{| DevOps}
+
+\location{January 2014 - April 2014 | Toronto, ON}
+\begin{tightitemize}
+\item Set up easily recreatable and destroyable virtual machines using Chef, Knife and vSphere.
+\item Created a variety of MySQL dump scripts in Python and SQL that run daily using cron.
+\item Maintained and added to a suite of Selenium tests for use on Polar's MediaVoice product.
+\item Set up unit testing and linting for the various Chef cookbooks.
+\item Wrote an IRC bot in Python to help coordinate users and add useful features to the IRC chat.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\section{Open Source Work}
+
+\runsubsection{Jenkins CI}
+\descript{| Contributing Community Member}
+\location{March 2014 – Present | \href{http://www.jenkins-ci.org}www.jenkins-ci.org}
+\begin{tightitemize}
+\item Fixed a bug in the Cobertura plugin which required use of Java, Maven and Apache Jelly.
+\item Updated the Jira plugin to use a better method for building strings.
+\item Added unit tests for new features to prevent regression. 
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Research
+%------------------------------------------------
+
+\section{Personal Projects}
+
+\runsubsection{AntiChess}
+\descript{| Chess Game}
+
+\location{2012 - 2013 | \href{https://github.com/Tamini/AntiChess}github.com/Tamini/AntiChess}
+Worked with a group to create a chess game with a custom made AI. I was responsible for the majority of the coding, including the AntiChessBoard class to organize and run the game as well as the AI coding and designing. AI implemented alpha-beta pruning and depth-first search to find the best moves.
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{UW Course App}
+\descript{| List, rate and comment on UW courses}
+
+\location{November 2013  |  \href{https://github.com/Tamini/UWCourseGooseRepos}github.com/Tamini/UWCourseGooseRepo}
+Worked in a team of four in the University of Waterloo EngHack 2013 Hackathon.  Wrote the Java and SQL backend for an android app that allowed for viewing and rating University of Waterloo courses.  As well as helped out with the UI code when a groupmate had trouble.
+
+\sectionspace % Some whitespace after the section
+
+\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+
 \end{document}

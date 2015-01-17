@@ -24,7 +24,7 @@
 \newcommand{\lineunder}{\vspace*{-8pt}\par\hspace*{-18pt}\hrulefill\par}
 \newcommand{\contact}[5]{%
 \vspace*{-8pt}
-\begin{mdframed}[hidealllines=true,backgroundcolor=gray!20]
+\begin{mdframed}[linecolor=black, linewidth=0.5pt, topline=false, rightline=false, leftline=false, backgroundcolor=white!20]
 \vspace*{5pt}
 \begin{center}
 {\huge\scshape #1}\\
@@ -34,7 +34,7 @@
 \end{center}
 \vspace*{5pt}
 \end{mdframed}
-\vspace*{-12pt}
+\vspace*{-18pt}
 }
 
 \newcommand{\CPP}
@@ -48,10 +48,7 @@
 
 \begin{document}
 \contact{Tristan Amini}{(416) 801-5288}{tsamini@uwaterloo.ca}{github.com/Tamini}
-\smallskip
-\lineunder
-\vspace*{-10pt}
-\subsection*{Relevant Experience}
+\subsection{\subsection*{Relevant Experience}}
 \begin{itemize}[leftmargin=-0.5em, label={}]
 	\parskip=0.1em
 
@@ -68,8 +65,8 @@
 		\item Wrote bash script to allow for automatic OVA creation for customer deployments of software bundle.
 		\item Created Scala application to read and anonymize millions of data entries from log files.
 		\item Fixed a Windows registry key related bug in the company's agent using \CPP.
-		\item Lots of experience setting up and troubleshooting a Hadoop/HBase/Spark installation.
-		\item Wrote many maven and SBT files to package builds and deploy them to internal Artifactory server.
+		\item Maintained and set up a Hadoop/HBase/Spark installation.
+		\item Wrote many Maven and SBT files to package builds and deploy them to internal Artifactory server.
 	\end{itemize}
 
 	\item
@@ -82,7 +79,7 @@
 		{\emph{January 2014 - April 2014}}
 	\begin{itemize}
 		\item Set up easily recreatable and destroyable virtual machines using Chef, Knife and vSphere.
-		\item Created a variety of MySQL dump scripts in Python and SQL that are run daily using cron.
+		\item Created a variety of MySQL dump scripts in Python and SQL that run daily using cron.
 		\item Used Chef to quickly configure Jenkins jobs to allow for automated building of projects.
 		\item Maintained and added to a suite of Selenium tests for use on Polar's MediaVoice product.
 		\item Set up unit testing and linting for the various Chef cookbooks used at Polar.
@@ -112,7 +109,7 @@
 		{\emph{Notable Coding Projects}}
 		{\emph{September 2010 - Present}}
 	\begin{itemize}
-		\item {\bf AntiChess} Created an chess game with a custom made AI. AI implemented alpha-beta pruning and depth-first search.
+		\item {\bf AntiChess} Created a chess game with a custom made AI. AI implemented alpha-beta pruning and depth-first search.
 		\item {\bf UW Course App} Wrote the Java and SQL backend for an android app that allowed for viewing and rating University of Waterloo courses.
 	\end{itemize}
 

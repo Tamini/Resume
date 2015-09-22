@@ -9,7 +9,7 @@
 %	CLASS OPTIONS AND REQUIRED PACKAGES
 %----------------------------------------------------------------------------------------
 
-\ProvidesClass{deedy-resume}[2014/04/30 CV class]
+\ProvidesClass{deedy-resume-modified}[2014/04/30 CV class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax

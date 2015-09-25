@@ -1,7 +1,6 @@
 \documentclass[letterpaper]{deedy-resume-modified} % Use US Letter paper, change to a4paper for A4 
 
 \begin{document}
-
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
@@ -13,18 +12,19 @@
 %----------------------------------------------------------------------------------------
 %	LEFT COLUMN
 %----------------------------------------------------------------------------------------
+\hspace{-25pt}\colorbox{MidnightBlue!60}{\hspace{15pt}
 \begin{minipage}[t]{0.32\textwidth} % The left column takes up 33% of the text width of the page
-
+\vspace{16pt}
 %------------------------------------------------
 % Education
 %------------------------------------------------
 
-\section{Education} 
+\section*{\color{White}EDUCATION} 
 
 \subsection{University of Waterloo}
 
 \descript{Systems Design Engineering}
-\location{Class of 2018}
+\subsub{Class of 2018}
 
 \sectionspace % Some whitespace after the section
 
@@ -32,7 +32,7 @@
 % Links
 %------------------------------------------------
 
-\section{Links} 
+\section*{\color{White}LINKS} 
 
 Github: \href{https://github.com/Tamini}{\bf github.com/Tamini} \\
 LinkedIn: \href{https://www.linkedin.com/in/tamini}{\bf linkedin.com/in/tamini} \\
@@ -43,9 +43,9 @@ LinkedIn: \href{https://www.linkedin.com/in/tamini}{\bf linkedin.com/in/tamini} 
 % Skills
 %------------------------------------------------
 
-\section{Programming}
+\section*{\color{White}PROGRAMMING}
 
-\location {Language | Familiarity}
+\subsub {Language | Familiarity}
 \NumTabs{3}
 Java \tab {\bf + + + + +}\\
 Bash \tab {\bf + + + + +}\\
@@ -65,16 +65,16 @@ Chef \tab {\bf + +}\\
 Ruby \tab {\bf + +}\\
 
 \sectionspace
-\location {Tool | Familiarity}
+\subsub {Tool | Familiarity}
 Git \tab {\bf + + + + +}\\
 gdb \tab {\bf + + + +}\\
 Maven \tab {\bf + + + +}\\
 Jenkins CI \tab {\bf + + + +}\\
+Eclipse IDE \tab {\bf + + +}\\
 Android \tab {\bf + + +}\\
 AngularJS \tab {\bf + + +}\\
 SBT \tab {\bf + + +}\\
 SolidWorks \tab {\bf + +}\\
-VisualStudio \tab {\bf + +}\\
 
 \sectionspace
 
@@ -82,12 +82,13 @@ VisualStudio \tab {\bf + +}\\
 % Skills
 %------------------------------------------------
 
-\section{Past Employers}
+\section*{\color{White}PAST EMPLOYERS}
 \subsection{Interset}
 "Tristan was keen to gain exposure\\to every aspect of software development and he demonstrated\\an exceptional ability to very quickly become productive with new technologies." \\
 \location{- Michael Iles | Dev Lead}
 
-\end{minipage} % The end of the left column
+
+\end{minipage}} % The end of the left column
 \hfill
 %
 %----------------------------------------------------------------------------------------
@@ -95,12 +96,12 @@ VisualStudio \tab {\bf + +}\\
 %----------------------------------------------------------------------------------------
 %
 \begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
-
+\vspace{16pt}
 %------------------------------------------------
 % Experience
 %------------------------------------------------
 
-\section{Work Experience}
+\section{WORK EXPERIENCE}
 
 \runsubsection{IBM}
 \descript{| Open Source Compiler Developer}
@@ -155,7 +156,7 @@ VisualStudio \tab {\bf + +}\\
 % Open Source
 %------------------------------------------------
 
-\section{Open Source Work}
+\section{OPEN SOURCE WORK}
 
 \runsubsection{Jenkins CI}
 \descript{| Contributing Community Member}
@@ -172,7 +173,7 @@ VisualStudio \tab {\bf + +}\\
 % Personal Projects
 %------------------------------------------------
 
-\section{Personal Projects}
+\section{PERSONAL PROJECTS}
 
 \runsubsection{AntiChess}
 \descript{| Chess Game}

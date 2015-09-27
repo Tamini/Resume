@@ -3,22 +3,26 @@
 %----------------------------------------------------------------------------------------
 
 \newcommand{\CPP}
-{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\color{White} ++}}
 
 %----------------------------------------------------------------------------------------
 %	CLASS OPTIONS AND REQUIRED PACKAGES
 %----------------------------------------------------------------------------------------
 
-\ProvidesClass{deedy-resume}[2014/04/30 CV class]
+\ProvidesClass{deedy-resume-modified}[2014/04/30 CV class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
 \LoadClass{article}
 
 \usepackage[hmargin=1.05cm, vmargin=0.75cm]{geometry} % Specifies horizontal and vertical page margins
-\usepackage[hidelinks]{hyperref}
 \usepackage{tabto}
-
+\usepackage[colorlinks = true,
+ 	linkcolor = white,
+ 	urlcolor  = white,
+ 	citecolor = white,
+	anchorcolor = white]{hyperref}
+\newcommand{\changeurlcolor}[1]{\hypersetup{urlcolor=#1}}  
 %----------------------------------------------------------------------------------------
 %	COLORS
 %----------------------------------------------------------------------------------------
@@ -54,7 +58,7 @@
 \color{headings} % Use the headings color
 \fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3} % Contact information font
 \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}} % Horizontal rule
-\vspace{-5pt} % Reduce whitespace after the rule slightly
+\vspace{-21pt} % Reduce whitespace after the rule slightly
 }
 
 %----------------------------------------------------------------------------------------
@@ -68,10 +72,10 @@
 \newcommand{\sectionspace}{\vspace{8pt}} % Defines a command to add a set amount of space after sections and subsections
 
 \titleformat{\section}{ % Customize the large section titles
-\color{headings}\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{17pt}{25pt}\selectfont \raggedright\uppercase}{}{0em}{}
+\color{headings}\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{17pt}{25pt}\selectfont \raggedright}{}{0em}{}
 
 \titleformat{\subsection}{ % Customize the subsections and places worked/studied titles
-\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{13pt}{13pt}\selectfont\bfseries\uppercase}{}{0em}{}
+\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{13pt}{13pt}\selectfont\bfseries}{}{0em}{}
 
 \newcommand{\runsubsection}[1]{ % Used for creating subsections where a description is required on the same line
 \color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{13pt}{13pt}\selectfont\bfseries\uppercase {#1} \normalfont}
@@ -81,6 +85,15 @@
 
 \newcommand{\location}[1]{ % Used for specifying a duration and/or location under a subsection
 \color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1\\} \normalfont}
+
+\newcommand{\subsub}[1]{
+\color{White}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1\\} \normalfont}
+
+\newcommand{\listplus}[2]{
+\color{White}\raggedright\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{11pt}{12pt}\selectfont {#1 \tab \fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont{#2}\\} \normalfont}
+
+\newcommand{\quotext}[1]{
+\color{White}\raggedright\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{11pt}{12pt}\selectfont {#1 \\}\normalfont}
 
 %----------------------------------------------------------------------------------------
 %	SECTION TITLE STYLING AND SPACING

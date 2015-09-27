@@ -1,31 +1,30 @@
 \documentclass[letterpaper]{deedy-resume-modified} % Use US Letter paper, change to a4paper for A4 
 
 \begin{document}
-
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
 
 \namesection{Tristan}{Amini}{ 
- (416) 801-5288 | \href{mailto:tsamini@uwaterloo.ca}{tsamini@uwaterloo.ca}
+ (416) 801-5288 | tsamini@uwaterloo.ca
 }
 
 %----------------------------------------------------------------------------------------
 %	LEFT COLUMN
 %----------------------------------------------------------------------------------------
-
-\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
-
+\hspace{-30pt}\colorbox{MidnightBlue!80}{\hspace{10pt}
+\begin{minipage}[t]{0.32\textwidth} % The left column takes up 33% of the text width of the page
+\vspace{16pt}
 %------------------------------------------------
 % Education
 %------------------------------------------------
 
-\section{Education} 
+\section*{\color{White}EDUCATION} 
 
-\subsection{University of Waterloo}
+\subsection*{\color{White}University of Waterloo}
 
-\descript{Systems Design Engineering}
-\location{Class of 2018}
+\descript{\color{White}Systems Design Engineering}
+\subsub{Class of 2018}
 
 \sectionspace % Some whitespace after the section
 
@@ -33,10 +32,10 @@
 % Links
 %------------------------------------------------
 
-\section{Links} 
+\section*{\color{White}LINKS} 
 
-Github: \href{https://github.com/Tamini}{\bf github.com/Tamini} \\
-LinkedIn: \href{https://www.linkedin.com/in/tamini}{\bf linkedin.com/in/tamini} \\
+\subsub{Github: \href{https://github.com/Tamini}{github.com/Tamini}}
+\subsub {LinkedIn: \href{https://www.linkedin.com/in/tamini}{linkedin.com/in/tamini}}
 
 \sectionspace % Some whitespace after the section
 
@@ -44,39 +43,39 @@ LinkedIn: \href{https://www.linkedin.com/in/tamini}{\bf linkedin.com/in/tamini} 
 % Skills
 %------------------------------------------------
 
-\section{Skills}
+\section*{\color{White}PROGRAMMING}
 
-\subsection{Programming}
-\location {Language | Familiarity}
+\subsub {Language | Familiarity}
 \NumTabs{3}
-Java \tab {\bf + + + + +}\\
-Bash \tab {\bf + + + + +}\\
-\CPP \tab {\bf + + + +}\\
-\LaTeX \tab {\bf + + +}\\
-JavaScript \tab {\bf + + +}\\
-CSS \tab {\bf + + +}\\
-HTML \tab {\bf + + +}\\
-Chef \tab {\bf + + +}\\
-Scala \tab {\bf + + +}\\
-SQL \tab {\bf + + +}\\
-Ruby \tab {\bf + +}\\
-Python \tab {\bf + +}\\
-Assembly \tab {\bf +}\\
+\vspace{2pt}
+\listplus{Java}{+ + + + +}
+\listplus{Bash}{+ + + + +}
+\listplus{\CPP}{+ + + +}
+\listplus{Go}{+ + +}
+\listplus{\LaTeX}{+ + +}
+\listplus{Assembly}{+ + +}
+\listplus{OCaml}{+ + +}
+\listplus{Scala}{+ + +}
+\listplus{SQL}{+ + +}
+\listplus{R}{+ + +}
+\listplus{Python}{+ + +}
+\listplus{CSS}{+ + +}
+\listplus{HTML}{+ + +}
+\listplus{JavaScript}{+ + +}
+\listplus{Chef}{+ +}
+\listplus{Ruby}{+ +}
 
 \sectionspace
-\location {Tool | Familiarity}
-Git \tab {\bf + + + + +}\\
-Maven \tab {\bf + + + + +}\\
-Jenkins CI \tab {\bf + + + +}\\
-SBT \tab {\bf + + + +}\\
-Vim \tab {\bf + + + +}\\
-EMacs \tab {\bf + + +}\\
-Android \tab {\bf + + +}\\
-AngularJS \tab {\bf + + +}\\
-Eclipse IDE \tab {\bf + + +}\\
-Regex \tab {\bf + +}\\
-SolidWorks \tab {\bf + +}\\
-VisualStudio \tab {\bf + +}\\
+\subsub {Tool | Familiarity}
+\listplus{Git}{+ + + + +}
+\listplus{Jira}{+ + + +}
+\listplus{gdb}{+ + + +}
+\listplus{Maven}{+ + + +}
+\listplus{Jenkins CI}{+ + + +}
+\listplus{Eclipse IDE}{+ + +}
+\listplus{Android}{+ + +}
+\listplus{AngularJS}{+ + +}
+\listplus{SBT}{+ +}
 
 \sectionspace
 
@@ -84,12 +83,16 @@ VisualStudio \tab {\bf + +}\\
 % Skills
 %------------------------------------------------
 
-\section{Past Employers}
-\subsection{Interset}
-"Tristan was keen to gain exposure\\to every aspect of software development and he demonstrated\\an exceptional ability to very quickly become productive with new technologies." \\
-\location{- Michael Iles | Dev Lead}
-
-\end{minipage} % The end of the left column
+\section*{\color{White}PAST EMPLOYERS}
+\subsection{\color{White}Interset}
+\quotext{"...he demonstrated an exceptional ability to very quickly become productive with new technologies." }
+\subsub{- Michael Iles | Dev Lead}
+\vspace{7pt}
+\subsection{\color{White}IBM}
+\quotext{"...his innovative solution to managing exceptions and frame descriptors was the key to our finishing that project..."}
+\subsub{- Bill O'Farrell | Developer}
+\vspace{7pt}
+\end{minipage}} % The end of the left column
 \hfill
 %
 %----------------------------------------------------------------------------------------
@@ -97,25 +100,42 @@ VisualStudio \tab {\bf + +}\\
 %----------------------------------------------------------------------------------------
 %
 \begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
-
+\changeurlcolor{Black}
+\vspace{16pt}
 %------------------------------------------------
 % Experience
 %------------------------------------------------
 
-\section{Work Experience}
+\section{WORK EXPERIENCE}
+
+\runsubsection{IBM}
+\descript{| Open Source Compiler Developer}
+
+\location{May 2015 - August 2015 | Markham, ON}
+\vspace{\topsep}
+\begin{tightitemize}
+\item Part of the two man team that ported the OCaml compiler to the Z Architecture. Required reading and writing x64, ppc and Z Assembly.
+\item Wrote a relocation type for the Go linker to work with Z.
+\item Worked on the Go Assembler for Z.
+\item Ported the Ruby SourceRPM to Z.
+\end{tightitemize}
+
+\sectionspace %whitespace
+
+%----------------------------------------------
 
 \runsubsection{Interset}
 \descript{| Software Engineer}
 
 \location{September 2014 – December 2014 | Ottawa, ON}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightitemize}
-\item Built administration pages for use internally and by customers using JavaScript, HTML and CSS.
 \item Wrote bash script to allow for automatic OVA creation for customer deployments of software bundle.
-\item Created Scala application to read and anonymize millions of data entries from log files.
+\item Created Scala application to read and anonymize millions of data entries.
 \item Fixed a Windows registry related bug in the company's agent using \CPP.
-\item Maintained and set up a Hadoop/HBase/Spark installation.
-\item Wrote many Maven and SBT files to package builds and deploy them to internal Artifactory server.
+\item Maintained and set up a Hadoop/HBase/Phoenix/Spark installation.
+\item Wrote many Maven and SBT files to package builds and deploy them.
+\item Setup data stack on AWS machine.
+\item Built web pages for use internally and by customers.
 \end{tightitemize}
 
 \sectionspace % Some whitespace after the section
@@ -128,8 +148,8 @@ VisualStudio \tab {\bf + +}\\
 \location{January 2014 - April 2014 | Toronto, ON}
 \begin{tightitemize}
 \item Set up easily recreatable and destroyable virtual machines using Chef, Knife and vSphere.
-\item Created a variety of MySQL dump scripts in Python and SQL that run daily using cron.
-\item Maintained and added to a suite of Selenium tests for use on Polar's MediaVoice product.
+\item Created MySQL dump scripts in Python and SQL that run daily using cron.
+\item Maintained and added to a suite of Selenium tests for Polar's MediaVoice.
 \item Set up unit testing and linting for the various Chef cookbooks.
 \item Wrote an IRC bot in Python to help coordinate users and add useful features to the IRC chat.
 \end{tightitemize}
@@ -140,13 +160,13 @@ VisualStudio \tab {\bf + +}\\
 % Open Source
 %------------------------------------------------
 
-\section{Open Source Work}
+\section{OPEN SOURCE WORK}
 
 \runsubsection{Jenkins CI}
 \descript{| Contributing Community Member}
-\location{March 2014 – Present | \href{http://www.jenkins-ci.org}www.jenkins-ci.org}
+\location{March 2014 – Present | \href{http://www.jenkins-ci.org} {www.jenkins-ci.org}}
 \begin{tightitemize}
-\item Fixed a bug in the Cobertura plugin which required use of Java, Maven and Apache Jelly.
+\item Fixed a bug in the Cobertura plugin which required use of Java and Maven.
 \item Updated the Jira plugin to use a better method for building strings.
 \item Added unit tests for new features to prevent regression. 
 \end{tightitemize}
@@ -157,13 +177,13 @@ VisualStudio \tab {\bf + +}\\
 % Personal Projects
 %------------------------------------------------
 
-\section{Personal Projects}
+\section{PERSONAL PROJECTS}
 
 \runsubsection{AntiChess}
 \descript{| Chess Game}
 
-\location{2012 - 2013 | \href{https://github.com/Tamini/AntiChess}github.com/Tamini/AntiChess}
-Worked with a group to create a chess game with a custom made AI. I was responsible for the majority of the coding, including the AntiChessBoard class to organize and run the game as well as the AI coding and designing. AI implemented alpha-beta pruning and depth-first search to find the best moves.
+\location{2012 - 2013 | \href{https://github.com/Tamini/AntiChess} {github.com/Tamini/AntiChess}}
+Created a chess game with a custom made AI.   AI implemented alpha-beta pruning and depth-first search to find the best moves.
 
 \sectionspace % Some whitespace after the section
 
@@ -172,8 +192,8 @@ Worked with a group to create a chess game with a custom made AI. I was responsi
 \runsubsection{UW Course App}
 \descript{| List, rate and comment on UW courses}
 
-\location{November 2013  |  \href{https://github.com/Tamini/UWCourseGooseRepos}github.com/Tamini/UWCourseGooseRepo}
-Worked in a team of four in the University of Waterloo EngHack 2013 Hackathon.  Wrote the Java and SQL backend for an android app that allowed for viewing and rating University of Waterloo courses.  As well as helped out with the UI code when a groupmate had trouble.
+\location{November 2013  |  \href{https://github.com/Tamini/UWCourseGooseRepos} {github.com/Tamini/UWCourseGooseRepo}}
+Wrote the Java and SQL backend for an android app that allowed for viewing and rating University of Waterloo courses.
 
 \sectionspace % Some whitespace after the section
 

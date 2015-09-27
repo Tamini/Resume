@@ -22,7 +22,7 @@
  	urlcolor  = white,
  	citecolor = white,
 	anchorcolor = white]{hyperref}
-
+\newcommand{\changeurlcolor}[1]{\hypersetup{urlcolor=#1}}  
 %----------------------------------------------------------------------------------------
 %	COLORS
 %----------------------------------------------------------------------------------------

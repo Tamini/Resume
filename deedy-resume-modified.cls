@@ -15,7 +15,7 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
-\usepackage[hmargin=1.05cm, vmargin=0.75cm]{geometry} % Specifies horizontal and vertical page margins
+\usepackage[hmargin=1.05cm, vmargin=0.75cm, bmargin=0cm]{geometry} % Specifies horizontal and vertical page margins
 \usepackage{tabto}
 \usepackage[colorlinks = true,
  	linkcolor = white,

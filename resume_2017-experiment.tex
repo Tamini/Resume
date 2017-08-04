@@ -1,0 +1,259 @@
+\documentclass[letterpaper]{deedy-resume-modified} % Use US Letter paper, change to a4paper for A4 
+\usepackage{enumitem}
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+\namesection{Tristan}{Amini}{ 
+ (416) 801-5288 | tsamini@uwaterloo.ca
+}
+
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+\hspace{-30pt}\colorbox{MidnightBlue!80}{\hspace{10pt}
+\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+\vspace{5pt}
+%------------------------------------------------
+% Education
+%------------------------------------------------
+
+\section*{\color{White}EDUCATION} 
+
+\subsection*{\color{White}University of Waterloo}
+
+\descript{\color{White}Systems Design Engineering}
+\subsub{Class of 2018}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Links
+%------------------------------------------------
+
+\section*{\color{White}CONNECT} 
+
+\subsub{Github: \href{https://github.com/Tamini}{github.com/Tamini}}
+\subsub {LinkedIn: \href{https://www.linkedin.com/in/tamini}{linkedin.com/in/tamini}}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Skills
+%------------------------------------------------
+
+\section*{\color{White}TECHNICAL SKILLS}
+\vspace{2pt}
+
+\subsection{\color{White}C++}
+\vspace{5pt}
+\quotext{\textbullet  Worked in \CPP \hspace{1pt} for driver dev at AMD.}
+\vspace{3pt}
+\quotext{\textbullet  Created KMD fuzz tester at AMD.}
+\vspace{3pt}
+\quotext{\textbullet  Used in game AI development at EA.}
+\sectionspace %whitespace
+
+\subsection{\color{White}Java}
+\vspace{5pt}
+\quotext{\textbullet  Created AntiChess and others games.}
+\vspace{3pt}
+\quotext{\textbullet  Utilized in Selenium tests at Polar.}
+\vspace{3pt}
+\quotext{\textbullet  Used in website backend at Interset.}
+
+\sectionspace %whitespace
+
+\subsection{\color{White}SQL}
+\vspace{5pt}
+\quotext{\textbullet  Wrote scripts to dump SQL at Polar.}
+\vspace{3pt}
+\quotext{\textbullet  Setup/maintain SQL stack at Interset.}
+\vspace{3pt}
+\quotext{\textbullet  Shifted NHL AI backend to SQL at EA.}
+\sectionspace
+
+\subsection{\color{White}C\#}
+\vspace{5pt}
+\quotext{\textbullet  Writing scripts for my Spark game.}
+\vspace{3pt}
+\quotext{\textbullet  Wrote animation processors for EA.}
+\vspace{3pt}
+\quotext{\textbullet  Created animation placers for EA.}
+\sectionspace
+
+\subsection{\color{White}Python}
+\vspace{5pt}
+\quotext{\textbullet  Wrote bot for Polar's internal IRC.}
+\vspace{3pt}
+\quotext{\textbullet  Worked with Django at Polar.}
+\vspace{3pt}
+\quotext{\textbullet  Write scripts to speed up school work.}
+\sectionspace
+
+\subsection{\color{White}MATLAB}
+\vspace{5pt}
+\quotext{\textbullet  Learned in university courses.}
+\vspace{3pt}
+\quotext{\textbullet  Utilized for signal processing.}
+\vspace{3pt}
+\quotext{\textbullet  Simulated projects for ideal results.}
+\sectionspace
+
+\subsection{\color{White}Additional Skills}
+\vspace{5pt}
+\quotext{Git, \LaTeX, Scala, Go, Blender, Maya, Unreal Engine 4, x86 Assembly}
+\sectionspace
+
+%------------------------------------------------
+% Past Employers
+%------------------------------------------------
+%\vspace{-5pt}
+%\section*{\color{White}PAST EMPLOYERS}
+%\subsection{\color{White}Interset}
+%\quotext{"...he demonstrated an exceptional ability to very quickly become productive with new technologies." }
+%\subsub{- Michael Iles | Dev Lead}
+%\vspace{7pt}
+%\subsection{\color{White}IBM}
+%\quotext{"...his innovative solution to managing exceptions and frame descriptors was the key to our finishing that project..."}
+%\subsub{- Bill O'Farrell | Developer}
+%\vspace{5pt}
+
+%\section*{\color{White}ADDITIONAL INFO}
+%\quotext{Although my past internships have been mostly software focused, I am also quite good with electronics. I have taken multiple courses %that have given me hands-on experience with circuits. I know how to solder and have made use of it in past projects.}
+%\vspace{16pt}
+
+
+%\subsub{This resume is written in \LaTeX! \vspace{1pt} View the source at: \href{https://github.com/Tamini/Resume} %{github.com/Tamini/Resume}}
+\vspace{95pt}
+\end{minipage}} % The end of the left column
+\hfill
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+\changeurlcolor{Black}
+\vspace{5pt}
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+
+\section{WORK EXPERIENCE}
+
+\runsubsection{Electronic Arts}
+\descript{| Associate Developer - NHL Gameplay}
+
+\location{September 2016 - December 2016 | Burnaby, BC}
+\vspace{\topsep}
+\begin{tightitemize}
+\item Suggested and implemented SQLite to store different AI sequences for use in-game and to speed up development time.  
+\item AI database changes required rewriting much of the legacy \CPP \hspace{1pt}code for new read and write operations.
+\item Created a set of placers and processors in C\# to organize, expediate and improve the animation selection process.
+\end{tightitemize}
+
+\sectionspace %whitespace
+
+%----------------------------------------------
+
+\runsubsection{AMD}
+\descript{| Driver Developer}
+
+\location{January 2016 - April 2016 | Markham, ON}
+\vspace{\topsep}
+\begin{tightitemize}
+\vspace{-10pt}
+\item Led the team that developed software in \CPP \hspace{1pt} to simulate attacks on the AMD display driver.  Fixed all identified security vulnerabilities leading to a more secure and reliable driver for AMD's users.
+\item Fixed bugs and worked on features in the AMD Kernel Mode Driver.
+\end{tightitemize}
+
+\sectionspace %whitespace
+
+%----------------------------------------------
+
+\runsubsection{IBM}
+\descript{| Open Source Compiler Developer}
+
+\location{May 2015 - August 2015 | Markham, ON}
+\begin{tightitemize}
+\item Part of the two-man team that ported the OCaml compiler to the Z Architecture. Required writing x64, PPC and Z Assembly.
+\item Worked on the Go Assembler and Linker for Z.
+\end{tightitemize}
+
+\sectionspace %whitespace
+
+%----------------------------------------------
+
+\runsubsection{Interset}
+\descript{| Software Engineer}
+
+\location{September 2014 – December 2014 | Ottawa, ON}
+\begin{tightitemize}
+\item Created Scala application to read and anonymize millions of data entries.
+\item Maintained and set up a Hadoop/HBase/Phoenix/Spark install on AWS.
+\item Built company web pages using JavaScript, HTML and CSS.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{Polar}
+\descript{| DevOps}
+
+\location{January 2014 - April 2014 | Toronto, ON}
+\begin{tightitemize}
+\item Worked with Django for Polar's website and product backend.
+\item Created MySQL dump scripts in Python and SQL that run daily using cron.
+\item Wrote an IRC bot in Python to add useful features to the IRC chat.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Open Source Work
+%------------------------------------------------
+\vspace{-8pt}
+\section{OPEN SOURCE WORK}
+
+\runsubsection{Jenkins}
+\descript{| Contributing Community Member}
+
+\location{March 2014 - Present  |  \href{www.jenkins.io}{jenkins.io}}
+Fixed a bug in the Cobertura plugin that caused test result metrics to be incorrectly displayed to users.
+
+\sectionspace % Some whitespace after the section
+
+
+
+%------------------------------------------------
+% Personal Projects
+%------------------------------------------------
+\vspace{-8pt}
+\section{PERSONAL PROJECTS}
+
+\runsubsection{Spark}
+\descript{| Third-Person Hack and Slash Game}
+
+\location{July 2016 - Present  |  Still in development!}
+Creating a third-person PC game in Unreal Engine 4 using both Blueprints and C++.  Using Blender for modelling and Maya for animation.
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{AntiChess}
+\descript{| Chess Game with Custom AI}
+
+\location{2012 - 2013 | \href{https://github.com/Tamini/AntiChess} {github.com/Tamini/AntiChess}}
+Created a chess game in Java with a custom AI.   AI implemented alpha-beta pruning and depth-first search to find the best moves.  Each piece was assigned a point value and the AI determined the best move by looking at possible future board states and determining the most favourable outcome.
+
+
+\sectionspace % Some whitespace after the section
+
+\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

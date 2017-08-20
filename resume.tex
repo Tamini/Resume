@@ -5,7 +5,7 @@
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
 \namesection{Tristan}{Amini}{ 
- (416) 801-5288 | tsamini@uwaterloo.ca
+ (416) 801-5288 | tristanamini@gmail.com
 }
 
 %----------------------------------------------------------------------------------------
@@ -18,12 +18,13 @@
 % Education
 %------------------------------------------------
 
-\section*{\color{White}EDUCATION} 
+\section*{\color{White}Education} 
 
 \subsection*{\color{White}University of Waterloo}
 
+\subsub{Bachelor of Applied Science}
 \descript{\color{White}Systems Design Engineering}
-\subsub{Class of 2018}
+\descript{\color{White}Class of 2018}
 
 \sectionspace % Some whitespace after the section
 
@@ -31,7 +32,7 @@
 % Links
 %------------------------------------------------
 
-\section*{\color{White}CONNECT} 
+\section*{\color{White}Connect} 
 
 \subsub{Github: \href{https://github.com/Tamini}{github.com/Tamini}}
 \subsub {LinkedIn: \href{https://www.linkedin.com/in/tamini}{linkedin.com/in/tamini}}
@@ -42,7 +43,7 @@
 % Skills
 %------------------------------------------------
 
-\section*{\color{White}TECHNICAL SKILLS}
+\section*{\color{White}Technical Skills}
 \vspace{2pt}
 
 \subsection{\color{White}C++}
@@ -64,6 +65,16 @@
 
 \sectionspace %whitespace
 
+\subsection{\color{White}JavaScript}
+\vspace{5pt}
+\quotext{\textbullet  Worked heavily in JavaScript at Uber.}
+\vspace{3pt}
+\quotext{\textbullet  Created many data visualizations.}
+\vspace{3pt}
+\quotext{\textbullet  Thorough understanding of React.}
+
+\sectionspace %whitespace
+
 \subsection{\color{White}SQL}
 \vspace{5pt}
 \quotext{\textbullet  Wrote scripts to dump SQL at Polar.}
@@ -71,15 +82,6 @@
 \quotext{\textbullet  Setup/maintain SQL stack at Interset.}
 \vspace{3pt}
 \quotext{\textbullet  Shifted NHL AI backend to SQL at EA.}
-\sectionspace
-
-\subsection{\color{White}C\#}
-\vspace{5pt}
-\quotext{\textbullet  Writing scripts for my Spark game.}
-\vspace{3pt}
-\quotext{\textbullet  Wrote animation processors for EA.}
-\vspace{3pt}
-\quotext{\textbullet  Created animation placers for EA.}
 \sectionspace
 
 \subsection{\color{White}Python}
@@ -109,7 +111,7 @@
 % Past Employers
 %------------------------------------------------
 %\vspace{-5pt}
-%\section*{\color{White}PAST EMPLOYERS}
+%\section*{\color{White}Past Employers}
 %\subsection{\color{White}Interset}
 %\quotext{"...he demonstrated an exceptional ability to very quickly become productive with new technologies." }
 %\subsub{- Michael Iles | Dev Lead}
@@ -125,7 +127,7 @@
 
 
 %\subsub{This resume is written in \LaTeX! \vspace{1pt} View the source at: \href{https://github.com/Tamini/Resume} %{github.com/Tamini/Resume}}
-\vspace{95pt}
+\vspace{80pt}
 \end{minipage}} % The end of the left column
 \hfill
 %
@@ -140,16 +142,30 @@
 % Experience
 %------------------------------------------------
 
-\section{WORK EXPERIENCE}
+\section{Work Experience}
 
+\runsubsection{Uber}
+\descript{| Software Engineering Intern - Maps}
+
+\location{May 2017 - August 2017 | San Francisco, CA}
+\vspace{\topsep}
+\begin{tightitemize}
+\item Constructed vector tiles in Java to pass to the web frontend in order to display desired information on maps using MapBox.
+\item Set up S3 bucket, JavaScript frontend and Java backend to allow for uploading and displaying of images on the web pages.
+\item Set up a variety of dynamic data visualizations by surfacing ElasticSearch data to the JavaScript/React/Redux frontend.
+\end{tightitemize}
+
+\sectionspace %whitespace
+
+%----------------------------------------------
 \runsubsection{Electronic Arts}
-\descript{| Associate Developer - NHL Gameplay}
-
+\descript{| Associate Developer - Gameplay}
 \location{September 2016 - December 2016 | Burnaby, BC}
 \vspace{\topsep}
 \begin{tightitemize}
+\vspace{-10pt}
 \item Suggested and implemented SQLite to store different AI sequences for use in-game and to speed up development time.  
-\item AI database changes required rewriting much of the legacy \CPP \hspace{1pt}code for new read and write operations.
+\item Rewrote much of the legacy \CPP \hspace{1pt}code for new read and write operations.
 \item Created a set of placers and processors in C\# to organize, expediate and improve the animation selection process.
 \end{tightitemize}
 
@@ -164,7 +180,7 @@
 \vspace{\topsep}
 \begin{tightitemize}
 \vspace{-10pt}
-\item Led the team that developed software in \CPP \hspace{1pt} to simulate attacks on the AMD display driver.  Fixed all identified security vulnerabilities leading to a more secure and reliable driver for AMD's users.
+\item Led the team that developed software in \CPP \hspace{1pt} to simulate attacks on potential vulnerabilities in the AMD display driver.  Leading to a more secure and reliable driver for AMD's users.
 \item Fixed bugs and worked on features in the AMD Kernel Mode Driver.
 \end{tightitemize}
 
@@ -178,7 +194,6 @@
 \location{May 2015 - August 2015 | Markham, ON}
 \begin{tightitemize}
 \item Part of the two-man team that ported the OCaml compiler to the Z Architecture. Required writing x64, PPC and Z Assembly.
-\item Worked on the Go Assembler and Linker for Z.
 \end{tightitemize}
 
 \sectionspace %whitespace
@@ -204,9 +219,8 @@
 
 \location{January 2014 - April 2014 | Toronto, ON}
 \begin{tightitemize}
-\item Worked with Django for Polar's website and product backend.
+\item Worked with Django and python for Polar's website and product backend.
 \item Created MySQL dump scripts in Python and SQL that run daily using cron.
-\item Wrote an IRC bot in Python to add useful features to the IRC chat.
 \end{tightitemize}
 
 \sectionspace % Some whitespace after the section
@@ -214,16 +228,16 @@
 %------------------------------------------------
 % Open Source Work
 %------------------------------------------------
-\vspace{-8pt}
-\section{OPEN SOURCE WORK}
+%\vspace{-8pt}
+%\section{Open Source Work}
 
-\runsubsection{Jenkins}
-\descript{| Contributing Community Member}
+%\runsubsection{Jenkins}
+%\descript{| Contributing Community Member}
 
-\location{March 2014 - Present  |  \href{www.jenkins.io}{jenkins.io}}
-Fixed a bug in the Cobertura plugin that caused test result metrics to be incorrectly displayed to users.
+%\location{March 2014 - Present  |  \href{www.jenkins.io}{jenkins.io}}
+%Fixed a bug in the Cobertura plugin that caused test result metrics to be incorrectly displayed to users.
 
-\sectionspace % Some whitespace after the section
+%\sectionspace % Some whitespace after the section
 
 
 
@@ -231,7 +245,7 @@ Fixed a bug in the Cobertura plugin that caused test result metrics to be incorr
 % Personal Projects
 %------------------------------------------------
 \vspace{-8pt}
-\section{PERSONAL PROJECTS}
+\section{Personal Projects}
 
 \runsubsection{Spark}
 \descript{| Third-Person Hack and Slash Game}
@@ -247,7 +261,7 @@ Creating a third-person PC game in Unreal Engine 4 using both Blueprints and C++
 \descript{| Chess Game with Custom AI}
 
 \location{2012 - 2013 | \href{https://github.com/Tamini/AntiChess} {github.com/Tamini/AntiChess}}
-Created a chess game in Java with a custom AI.   AI implemented alpha-beta pruning and depth-first search to find the best moves.  Each piece was assigned a point value and the AI determined the best move by looking at possible future board states and determining the most favourable outcome.
+Created a chess game in Java with a from scratch custom AI. The AI determined the best move by looking at possible future board states, pruning very undesirable states early to save processing time.
 
 
 \sectionspace % Some whitespace after the section
